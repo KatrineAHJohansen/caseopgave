@@ -4,24 +4,24 @@ import Orderitem from "../components/Orderitem.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div>
-			<Orderitem
-			variant="primary"
-			img="../src/assets/test.jpg"
-			pris="$90.00"
-			overskrift="Micro Backpack"
-			beskrivelse="Are you a minimalist looking for a compact carry option? The Micro Backpack is the perfect size for your essential everyday carry items. Wear it like a backpack or carry it like a satchel for all-day use."
-			status="Delivered"
-			link="View Product"
-			>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div>
+      <Orderitem
+        variant="primary"
+        img="../src/assets/test.jpg"
+        overskrift="Micro Backpack"
+        beskrivelse="Are you a minimalist looking for a compact carry option? The Micro Backpack is the perfect size for your essential everyday carry items. Wear it like a backpack or carry it like a satchel for all-day use."
+        status="Delivered"
+        pris="$90.00"
+        link="View Product"
+      />
+    </div>
+  </body>
 </html>

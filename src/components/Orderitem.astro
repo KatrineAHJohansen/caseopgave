@@ -1,17 +1,18 @@
 ---
-const {variant, overskrift, beskrivelse, pris, status, link, } = Astro.props;
+const { variant, overskrift, beskrivelse, pris, status, link } = Astro.props;
 ---
 
 <div class={variant}>
-    <div class="card_flex">
-        <img class="src/assets/test.jpg" alt="billede">
-        <p class="pris" {pris}>
-        <div class="text">
-            <p class="overskrift" {overskrift}>
-            <p class="beskrivelse" {beskrivelse}>
-        </div>
-        <div>
-            <p class="status" {status}>
-            <p class="link" {link}>
-        </div>
-           
+  <div class="card_flex">
+    <img src="src/assets/test.jpg" alt="billede" />
+    <div class="text">
+      <p class="overskrift">{overskrift}</p>
+      <p class="beskrivelse">{beskrivelse}</p>
+    </div>
+    <div>
+      <p class="status">{status}</p>
+      <p class="pris">{pris}</p>
+      <p class="link">{link}</p>
+    </div>
+  </div>
+</div>
