@@ -7,16 +7,41 @@ const { variant, overskrift, beskrivelse, pris, status, link } = Astro.props;
     <img src="src/assets/test.jpg" alt="billede" />
     <div class="text">
       <p class="overskrift">{overskrift}</p>
+      <div class="flex">
+        <p class="pris">{pris}</p>
+      </div>
       <p class="beskrivelse">{beskrivelse}</p>
     </div>
-    <div>
-      <p class="status">{status}</p>
-      <p class="pris">{pris}</p>
+    <p class="status">{status}</p>
+    <div class="flex">
       <p class="link">{link}</p>
     </div>
   </div>
 </div>
 
 <style>
-    
+  .card_flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+  }
+
+  .overskrift {
+    font-weight: 700;
+    color: var(#2d2d2d);
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .link {
+    color: var(--blue-7);
+    font-size: small;
+  }
 </style>
